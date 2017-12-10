@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Microsoft SQL Server</title>
+	<meta name="description" content="dbms, microsoft sql server, microsoft management studio">
+	<meta name="keywords" content="sql, dbms, ms sql, t-sql">
+	<meta name="author" content="Edward &amp; Albert">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="../../css/bundle.min.css">
+	<!--[if lt IE 9]>
+		<script src="../../js/html5shiv.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+                <section>
+                    <h1>Базы данных</h1>
+                    <h3>Microsoft SQL Server</h3>
+                    <p>
+                        <small>Edward &amp; Albert / <a href="https://github.com/tgjmjgj/sharp/">github:Tgjmjgj</a></small>
+                    </p>
+                </section>
+				<section>
+					<h2>Содержание лекции</h2>
+					<nav id="presentable-toc" class="table-content"></nav>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h1>База данных</h1>
+					<blockquote>
+						База Данных - центральный элемент практически любой информационной системы.
+					</blockquote>
+					<blockquote>
+						Простейший случай базы данных - файл с данными.
+						Однако в большинстве случаев применяется специализированное ПО - системы управления базами данных.
+					</blockquote>
+				</section>
+				<section>
+					<h1>Популярность СУБД</h1>
+					<img src="img/db_popularity.jpg" />
+				</section>
+			</section>
+			<section>
+				<section>
+					<h1>Виды БД</h1>
+					<blockquote>
+						Среди способов организации современных БД выделяются два основных направления:
+					</blockquote>
+					<blockquote>
+						<ul>
+							<li>Реляционные БД</li>
+							<li>NoSQL БД</li>
+						</ul>
+					</blockquote>
+				</section>
+				<section>
+					<h1>Реляционные БД</h1>
+					<blockquote>
+						В основе реляционных БД лежит табличное представление данных.
+						Связи между данными обеспечиваются при помощи отношений между таблицами.
+					</blockquote>
+					<blockquote>
+						Для обращения к данным в таких базах используется язык запросов SQL.
+					</blockquote>
+				</section>
+				<section>
+					<h1>NoSQL БД</h1>
+					<blockquote>
+						NoSQL базы могут иметь произвольное строение и принципы хранения данных (не реляционные, само собой).
+						Некоторые из типов NoSQL БД:
+					</blockquote>
+					<blockquote>
+						<ul>
+							<li>Хранилища "ключ-значение"</li>
+							<li>Хранилища семейства колонок</li>
+							<li>Документо-ориентированные БД</li>
+							<li>БД на основе графов</li>
+						</ul>
+					</blockquote>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h1>SQL</h1>
+					<blockquote>
+						Язык SQL - декларативный язык запросов. Впервые был разработан IBM в начале 1970-х.
+						Является общепризнанным стандартом для доступа к реляционным БД.
+					</blockquote>
+				</section>
+				<section>
+					<h1>Transact-SQL</h1>
+					<blockquote>
+						Transact-SQL - язык, расширяющий SQL до уровня процедурного программирования, разработанный Microsoft для 
+						своей СУБД платформы Microsoft SQL Server.
+					</blockquote>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h1>Microsoft SQL Server</h1>
+					<blockquote>
+						SQL Server - система управления реляционными базами данных, от Microsoft.
+						Первая версия была представлена в 1989 г.
+						На момент 2017 года последней версией является SQL Server 2017.
+						Поддерживается Windows (да ладно) и Linux.
+					</blockquote>
+				</section>
+				<section>
+					<h1>SQL Server 2017</h1>
+					<blockquote>
+						Существует несколько изданий SQL Server 2017:
+					</blockquote>
+					<blockquote>
+						<ul>
+							<li>Enterprise - для крупных систем (стоит много)</li>
+							<li>Standart - для проектов средних размеров (стоит много, но уже дешевле)</li>
+							<li>Developer - бесплатная Standart Edition, без возможности вывода в релиз</li>
+							<li>Express - бесплатная компактная редакция для небольших веб и мобильных систем</li>
+							<li>Web - специально для веб хостингов</li>
+							<li>Compact - бесплатная версия для настольных Windows приложений (а также ASP.NET)</li>
+						</ul>
+					</blockquote>
+				</section>
+				<section>
+					<h1>Архитектура</h1>
+					<blockquote>
+						С точки зрения архитектуры СУБД SQL Server представляет собой набор служб Windows или Linux демонов.
+						На Windows основными службами являются:
+						<tr>
+							<td>Database Engine</td><td>Управление реляционными БД</td>
+							<td>Analysis Services</td><td>Интеллектуальный анализ данных</td>
+							<td>Integration Services</td><td>Извлечение, преобразование и загрузка данных</td>
+							<td>Reporting Services</td><td>Управление отчетами</td>
+							<td>Full-Text Search</td><td>Управление полнотекстовым поиском</td>
+							<td>SQL Server Agent</td><td>Автоматизация административных задач</td>
+							<td>SQL Server Browser</td><td>Управление соединениями</td>
+						</tr>
+					</blockquote>
+				</section>
+				<section>
+					<h1>Клиент-сервер</h1>
+					<blockquote>
+						SQL Server предполагает разработку клиент-серверных приложений.
+						<p>
+							Взаимодействие клиента и сервера MSS:
+						</p>
+					</blockquote>
+					<img src="img/client_server_interaction.jpg" />
+				</section>
+				<section>
+					<h3>Спецификация взаимодействия</h3>
+					<blockquote>
+						Для взаимодействия клиентского приложения с сервером MSS слежит специальная DLL-библиотека, называемая SNAC
+						(SQL Native Access Client) которая состоит из:
+					</blockquote>
+					<blockquote>
+						<ul>
+							<li>провайдер OLEDB</li>
+							<li>драйвер ODBC</li>
+						</ul>
+					</blockquote>
+				</section>
+				<section>
+					<h3>Интерфейсы взаимодействия</h3>
+					Разные платформы разработки поставляют различные интерфейсы взаимодействия. Так, для .NET Framework 
+					это интерфейс ADO.NET. Для Java - JDBC.
+				</section>
+			</section>
+			<section>
+				<section>
+					<h1>SQL Server Management Studio</h1>
+					<blockquote>
+						Утилита MSMS предоставляет пользователю графический интерфейс, позволяющий администрировать и 
+						конфигурировать все компоненты сервера, а также содержит редактор для выполнения и отладки 
+						Transact-SQL запросов.
+					</blockquote>
+				</section>
+				<section>
+					<h2>SQLCMD</h2>
+					<blockquote>
+						Для выполнения сценариев T-SQL в интерфейсе командной строки служит утилита SQLCMD.
+					</blockquote>
+				</section>
+				<section>
+					<h2>SQL Server Configuration Manager</h2>
+					<blockquote>
+						Программа MSCM предназначается для конфигурирования, запуска и отсановки служб сервера, а также настройки 
+						сетевых протоколов.
+					</blockquote>
+				</section>
+			</section>
+			<section>
+				<h3>Тут надо показать как что-нибудь делается в MS Management Studio</h3>
+			</section>
+
+
+
+
+		</div>
+	</div>
+	<aside id="presentable-icon" class="cpp">
+		<a title="Содержание лекции" href="#/0/1">
+			<i class="fa fa-list-ul fa-2x"></i>
+		</a>
+	</aside>
+	<script src="../../js/bundle.min.js"></script>
+</body>
+
+</html>
