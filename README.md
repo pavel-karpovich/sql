@@ -1,4 +1,4 @@
-# Structured Query Language, or SQL. [ЛЕКЦИИ](https://tgjmjgj.github.io/sql/dist/index.html "Лекции")
+# Structured Query Language, or SQL. [ЛЕКЦИИ](https://tgjmjgj.github.io/sql/index.html "Лекции")
 
 ***
 
@@ -8,16 +8,16 @@
 
 Базы данных. Реляционные базы данных. Язык запросов SQL. СУБД. Microsoft SQL Server. Архитектура MSS. Утилиты MSS.
 
-[Лекция](https://tgjmjgj.github.io/sharp/dist/lecture/1_mssqlserver/index.html "Лекция")
+[Лекция](https://tgjmjgj.github.io/sql/lecture/1_mssqlserver/index.html "Лекция")
 
 ### Тема 2. Введение в SQL на примере Transact-SQL
 
 SQL и Transact-SQL. Группы операторов SQL: DDL, DCL, DML и TCL. Основные операторы, примеры их выполнения.
 
-[Лекция](https://tgjmjgj.github.io/sharp/dist/lecture/2_sql/index.html "Лекция")
+[Лекция](https://tgjmjgj.github.io/sql/lecture/2_sql/index.html "Лекция")
 
 ## Задания
 
 * Задание 1
 
-[*Работа с Microsoft Management Studio*](https://tgjmjgj.github.io/sql/dist/task/Task_1/Task_1.pdf "Задание 1")
+[*Работа с Microsoft Management Studio*](https://tgjmjgj.github.io/sql/task/Task_1/Task_1.pdf "Задание 1")
