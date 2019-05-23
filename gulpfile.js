@@ -31,7 +31,6 @@ const srcPath = {
     'cssLint': './src/**/*.css',
     'js': './src/!(js)*/**/*.js',
     'jsLint': ['./src/**/*.js', '!./src/**/*.min.js'],
-    'font': './src/font/**/*.*',
     'analysis': './code-analysis/',
     'task': './src/task/**/*.pdf',
     'cmpl': './src/completed/**/*.*'
@@ -43,7 +42,6 @@ const distPath = {
     'img': './dist/',
     'css': './dist/css/',
     'js': './dist/',
-    'font': './dist/font/',
     'task': './dist/task/',
     'cmpl': './dist/completed/'
 };
@@ -121,11 +119,6 @@ gulp.task('img', () => {
         .pipe(gulp.dest(distPath.img));
 });
 
-gulp.task('font', () => {
-    return gulp.src(srcPath.font)
-        .pipe(gulp.dest(distPath.font));
-});
-
 gulp.task('serve', () => {
     browserSync.init({
         server: distPath.dist,
@@ -150,7 +143,6 @@ gulp.task('build', gulpSequence('clean', ['js:lint', 'css:lint'], [
     'img',
     'js',
     'css',
-    'font',
     'task',
     'cmpl'
 ]));
@@ -160,7 +152,6 @@ gulp.task('watch', () => {
     watch(srcPath.html, () => gulp.start('html'));
     watch(srcPath.js, () => gulp.start('js'));
     watch(srcPath.img, () => gulp.start('img'));
-    watch(srcPath.font, () => gulp.start('font'));
     watch(srcPath.task, () => gulp.start('task'));
     watch(srcPath.cmpl, () => gulp.start('cmpl'));
 });
