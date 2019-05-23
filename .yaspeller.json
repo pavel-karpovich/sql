@@ -1,0 +1,20 @@
+{
+    "lang": "ru",
+    "excludeFiles": 
+    [
+        ".git",
+        "node_modules",
+        ".vscode",
+        "dist"
+    ],
+    "fileExtensions": 
+    [
+        ".md",
+        ".html"
+    ],
+    "checkYo": true,
+    "ignoreUppercase": true,
+    "ignoreUrls": true,
+    "dictionary": [
+    ]
+}
