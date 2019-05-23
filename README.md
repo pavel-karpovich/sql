@@ -18,6 +18,6 @@ SQL и Transact-SQL. Группы операторов SQL: DDL, DCL, DML и TCL
 
 ## Задания
 
-* Первое задание
+* Задание 1
 
-[_тут_](https://tgjmjgj.github.io/sql/dist/task/Task_1/Task_1.pdf "Задание 1")
+[*Работа с Microsoft Management Studio*](https://tgjmjgj.github.io/sql/dist/task/Task_1/Task_1.pdf "Задание 1")
